@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<htm lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Party Planner</title>
     <script src="./partyplanner.js" defer></script>
   </head>
-  <body></body>
-</htm
+  <body>
+    <h1>Events</h1>
+    <form id="addEvent">
+      <label
+        >Event name:
+        <input type="text" name="eventName" />
+      </label>
+      <label
+        >Event description:
+        <input type="text" name="eventDescription" />
+      </label>
+      <label
+        >Event date:
+        <input type="date" name="eventDate" />
+      </label>
+      <label>
+        Event time:
+        <input type="time" name="eventTime" />
+      </label>
+      <label
+        >Event location:
+        <input type="text" name="eventLocation" />
+      </label>
+
+      <button id="button">Submit</button>
+    </form>
+    <ul id="events"></ul>
+  </body>
+</html>
